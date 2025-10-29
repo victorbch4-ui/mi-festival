@@ -1,0 +1,46 @@
+<doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Entradas - Mi Festival Hip Hop</title>
+  <style>
+    body { background:#0d0d0d; color:#fff; font-family:Arial,sans-serif; text-align:center; margin:0; }
+    header, footer { background:#111; padding:1rem; }
+    nav a { color:#f2f2f2; margin:0 1rem; text-decoration:none; }
+    nav a:hover { color:#ff4444; }
+    .content { padding:2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MI FESTIVAL HIP HOP</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="program.html">Programación</a>
+      <a href="artists.html">Artistas</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>Compra tus entradas</h2>
+    <p>Consigue tus tickets para el festival antes de que se agoten.</p>
+
+    <!-- Aquí va el widget de Eventbrite (te lo da Eventbrite cuando crees el evento) -->
+    <div id="eventbrite-widget-container"></div>
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+    <script type="text/javascript">
+      window.EBWidgets.createWidget({
+        widgetType: 'checkout',
+        eventId: 'TU_ID_DE_EVENTBRITE_AQUI',
+        modal: true
+      });
+    </script>
+  </section>
+
+  <footer>
+    © 2025 Mi Festival Hip Hop
+  </footer>
+</body>
+</html>
